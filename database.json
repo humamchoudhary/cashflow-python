@@ -1,0 +1,107 @@
+{
+  "User": {
+    "1": {
+      "account_number": 12345678901234,
+      "username": "humamch",
+      "password": "123456",
+      "email": "humamch@gmail.com",
+      "gender": "M",
+      "full_name": "Muhammad Humam",
+      "balance": 300,
+      "currency": "USD",
+      "expense": [12, 19, 9, 5, 15, 3],
+      "income": [8, 12, 6, 15, 15, 20],
+      "year": "2023",
+      "month": "May",
+      "date": "17",
+      "day": "Wednessday",
+      "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+      "transection_log": [
+        {
+          "dest_type": "Inter Bank",
+          "destination": "Rafay",
+          "type": "Misc",
+          "amount": 30,
+          "date_time": "13-05-2023 9:56:50",
+          "transection": "outgoing",
+          "mode": "Card"
+        },
+        {
+          "dest_type": "Inter Bank",
+          "destination": "Rafay",
+          "type": "Misc",
+          "amount": 30,
+          "date_time": "13-05-2023 9:56:50",
+          "transection": "incoming",
+          "mode": "Online transection"
+        },
+        {
+          "dest_type": "Inter Bank",
+          "destination": "Rafay",
+          "type": "Misc",
+          "amount": 30,
+          "date_time": "13-05-2023 9:56:50",
+          "transection": "incoming",
+          "mode": "Online transection"
+        },
+        {
+          "dest_type": "Inter Bank",
+          "destination": "Rafay",
+          "type": "Misc",
+          "amount": 30,
+          "date_time": "13-05-2023 9:56:50",
+          "transection": "incoming",
+          "mode": "Online transection"
+        },
+        {
+          "dest_type": "Inter Bank",
+          "destination": "Rafay",
+          "type": "Misc",
+          "amount": 30,
+          "date_time": "13-05-2023 9:56:50",
+          "transection": "incoming",
+          "mode": "Online transection"
+        },
+        {
+          "dest_type": "Inter Bank",
+          "destination": "Rafay",
+          "type": "Misc",
+          "amount": 30,
+          "date_time": "13-05-2023 9:56:50",
+          "transection": "incoming",
+          "mode": "Online transection"
+        },
+        {
+          "dest_type": "Inter Bank",
+          "destination": "Rafay",
+          "type": "Misc",
+          "amount": 30,
+          "date_time": "13-05-2023 9:56:50",
+          "transection": "incoming",
+          "mode": "Online transection"
+        },
+        {
+          "dest_type": "Inter Bank",
+          "destination": "Rafay",
+          "type": "Misc",
+          "amount": 30,
+          "date_time": "13-05-2023 9:56:50",
+          "transection": "incoming",
+          "mode": "Online transection"
+        }
+      ],
+      "Cards": [
+        {
+          "card_number": 4782780002711581,
+          "cvv": 123,
+          "exp_date": "05/23",
+          "card_name": "M Humam Choudhary",
+          "limits": {
+            "daily": { "date": "13-03-2023", "total": 5000, "left": 4500 },
+            "monthly": { "month": "03-2023", "total": 100000, "left": 9999500 }
+          }
+        }
+      ]
+    }
+  }
+}
