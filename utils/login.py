@@ -5,7 +5,9 @@ user_table = db.table('User')
 query = Query()
 
 def login(username, password):
-    search =user_table.search(query.username == username and query.password == password)
+    search =user_table.search((query.username == username) & (query.password == password))
+    # print(username)
+    # print(search)
     if search !=[]:
         return search.pop()
     else: raise IncorrectLogin
