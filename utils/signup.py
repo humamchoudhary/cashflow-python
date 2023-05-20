@@ -7,10 +7,12 @@ query = Query()
 def signup(username,password,fname,email,gender):
     search = user_table.search((query.username==username )|( query.email==email ))
     if len(search) >0:
-        raise AccountExists("Username or email exists!")
+        return {"success":False,"message":"Username or email exists!"}
+        # raise AccountExists("Username or email exists!")
     else:
         user_table.insert(
             {
+                "account_number":00000000000000,    # TODO Create a account number generator
                 "username":username,
                 "password":password,
                 "email":email,
@@ -18,8 +20,16 @@ def signup(username,password,fname,email,gender):
                 "full_name":fname,
                 "balance":0,
                 "currency":"USD",
-                "account_number":00000000000000,    # TODO Create a account number generator
+                # TODO create a graph handler
+                "expense": [12, 19, 9, 5, 15, 3],
+                "income": [8, 12, 6, 15, 15, 20],
+                "year": "2023",
+                "month": "May",
+                "date": "17",
+                "day": "Wednessday",
+                "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
                 "transection_log":[],
+                
                 "Cards":[
                     #TODO: Create a card  generaot
                     {
@@ -38,5 +48,6 @@ def signup(username,password,fname,email,gender):
 
             }
             )
+        return {"success":True,"message":"Account created successfully"}
 
 # signup('humamch','123456','Muhammad Humam','humamch@gmail.com','M')
