@@ -1,11 +1,12 @@
 from pprint import pprint
 from tinydb import TinyDB,Query
 from utils.Exeptions import IncorrectLogin
-db = TinyDB('database.json')
-user_table = db.table('User')
-query = Query()
 from datetime import datetime
+
 def newTransection(username,destination_type,destination,payment_type,amount,transection,mode):
+    db = TinyDB('database.json')
+    user_table = db.table('User')
+    query = Query()
     if username != destination:
 
         new_transaction = {
@@ -32,9 +33,8 @@ def newTransection(username,destination_type,destination,payment_type,amount,tra
                     else:
                         return{'success':False,'message':'Insufficent balance!'}
                     
-                user['transection_log'].append(new_transaction)
+                user['transection_log'].insert(new_transaction,0)
                 user_table.update(user, user_query)
-                # print("..")
                 return {'success':True,'message':"Transaction Complete"}
            
         elif destination_type == 'Local Bank':
@@ -49,7 +49,7 @@ def newTransection(username,destination_type,destination,payment_type,amount,tra
                     user['balance'] -= amount
                 else:
                     return{'success':False,'message':'Insufficent balance!'}
-            user['transection_log'].append(new_transaction)
+            user['transection_log'].insert(new_transaction,0)
             user_table.update(user, user_query)
 
             return {'success':True,'message':"Transaction Complete"}
