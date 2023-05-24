@@ -17,6 +17,9 @@ def generate_qr_code(data):
 
     stream = BytesIO()
     qr_code_img.save(stream)
+    img = qr.make_image(fill_color="black", back_color="white")
+    qr_code_img.save("test.png")
+
     qr_code_bytes = stream.getvalue()
 
     return base64.b64encode(qr_code_bytes)
