@@ -19,7 +19,7 @@ def generate_qr_code(data):
     qr_code_img.save(stream)
     qr_code_bytes = stream.getvalue()
 
-    return base64.b64encode(qr_code_bytes).decode("utf-8")
+    return base64.b64encode(qr_code_bytes)
 
 
 # # Example dictionary to store in the QR code
@@ -29,7 +29,8 @@ def generate_qr_code(data):
 # data_string = str(data_dict)
 
 # # Generate the QR code image
-# qr_code_image = generate_qr_code(data_string)
+# qr_code_image = generate_qr_code(data_dict)
+# print(qr_code_image)
 
 # qr_code_base64 = base64.b64encode(qr_code_image.tobytes()).decode("utf-8")
 
