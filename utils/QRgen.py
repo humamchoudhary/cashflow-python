@@ -1,5 +1,6 @@
 import qrcode
 import base64
+from io import BytesIO
 
 
 def generate_qr_code(data):
@@ -14,7 +15,11 @@ def generate_qr_code(data):
 
     qr_code_img = qr.make_image(fill_color="black", back_color="white")
 
-    return base64.b64encode(qr_code_img.tobytes()).decode("utf-8")
+    stream = BytesIO()
+    qr_code_img.save(stream)
+    qr_code_bytes = stream.getvalue()
+
+    return base64.b64encode(qr_code_bytes).decode("utf-8")
 
 
 # # Example dictionary to store in the QR code

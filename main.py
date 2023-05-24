@@ -4,7 +4,7 @@ from tinydb import TinyDB, Query
 from utils.login import login
 from utils.signup import signup
 from flask_cors import CORS
-from utils.transections import newTransection
+from utils.transactions import newTransaction
 from pprint import pprint
 from utils.questions import assess_financial_need
 import time
@@ -40,31 +40,31 @@ def signupRoute():
     )
 
 
-@app.route("/get_transections")
-def transectionsRoute():
+@app.route("/get_transactions")
+def transactionsRoute():
     request_data = request.args
     user = request_data["username"]
     search = DB.table("User").search(QRY.username == user)
-    return search.pop()["transection_log"]
+    return search.pop()["transaction_log"]
 
 
-@app.route("/make_transection", methods=["POST"])
-def make_transection():
+@app.route("/make_transaction", methods=["POST"])
+def make_transaction():
     request_data = request.data
     request_data = json.loads(request_data.decode("utf-8"))
-    # pprint(request_data)
+    pprint(request_data)
 
-    sender_log = newTransection(
+    sender_log = newTransaction(
         request_data["username"],
         request_data["dest_type"],
         request_data["destination"],
         request_data["type"],
         float(request_data["amount"]),
-        request_data["transection"],
+        request_data["transaction"],
         request_data["mode"],
     )
     if sender_log["success"] == True and request_data["dest_type"] == "Inter Bank":
-        newTransection(
+        newTransaction(
             request_data["destination"],
             request_data["dest_type"],
             request_data["username"],
