@@ -1,5 +1,6 @@
 from tinydb import TinyDB, Query
 from utils.Exeptions import AccountExists
+from QRgen import generate_qr_code
 
 
 def signup(username, password, fname, email, gender):
@@ -33,6 +34,7 @@ def signup(username, password, fname, email, gender):
                 "day": "Wednessday",
                 "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
                 "transection_log": [],
+                "qr": generate_qr_code({"destination": username}),
                 "Cards": [
                     # TODO: Create a card  generaot
                     {

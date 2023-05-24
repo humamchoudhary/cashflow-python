@@ -7,6 +7,7 @@ from flask_cors import CORS
 from utils.transections import newTransection
 from pprint import pprint
 from utils.questions import assess_financial_need
+import time
 
 app = Flask(__name__)
 CORS(app)
@@ -18,7 +19,7 @@ QRY = Query()
 def loginRoute():
     request_data = request.data
     request_data = json.loads(request_data.decode("utf-8"))
-    print(request_data)
+    # print(request_data)
     # request_data = request.args
     return make_response(
         jsonify(login(request_data["username"], request_data["password"]))
@@ -52,6 +53,7 @@ def make_transection():
     request_data = request.data
     request_data = json.loads(request_data.decode("utf-8"))
     # pprint(request_data)
+
     sender_log = newTransection(
         request_data["username"],
         request_data["dest_type"],
