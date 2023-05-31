@@ -1,1 +1,346 @@
-{"User": {"1": {"account_number": 1232142132, "username": "humamch3", "password": "123456", "email": "humamch4@gmail.com", "gender": "M", "full_name": "Muhammad Humam", "balance": 40.0, "savings": 0.0, "saving_percent": 15, "useable_bal": 40.0, "currency": "USD", "expense": [460.0], "income": [0, 500], "year": "2023", "month": "May", "date": "17", "day": "Wednessday", "months": ["April", "May"], "transaction_log": [{"dest_type": "Local Bank", "destination": "1234567", "type": "Family Support", "amount": 10.0, "date_time": "31-05-2023 12:55:02", "transaction": "outgoing", "mode": "Online transaction"}, {"dest_type": "Inter Bank", "destination": "rafay", "type": "Family Support", "amount": 50.0, "date_time": "31-05-2023 12:53:33", "transaction": "outgoing", "mode": "Online transaction"}, {"dest_type": "Inter Bank", "destination": "rafay", "type": "Family Support", "amount": 400.0, "date_time": "31-05-2023 12:51:01", "transaction": "outgoing", "mode": "Online transaction"}, {"dest_type": "Inter Bank", "destination": "humamch3", "type": "Health", "amount": 120.0, "date_time": "24-05-2023 11:40:27", "transaction": "outgoing", "mode": "Online transaction"}, {"dest_type": "Inter Bank", "destination": "humamch3", "type": "Health", "amount": 120.0, "date_time": "24-05-2023 11:40:27", "transaction": "outgoing", "mode": "Online transaction"}, {"dest_type": "Inter Bank", "destination": "humamch3", "type": "Health", "amount": 120.0, "date_time": "24-05-2023 11:40:27", "transaction": "outgoing", "mode": "Online transaction"}, {"dest_type": "Inter Bank", "destination": "humamch3", "type": "Health", "amount": 120.0, "date_time": "24-05-2023 11:40:27", "transaction": "outgoing", "mode": "Online transaction"}, {"dest_type": "Inter Bank", "destination": "humamch3", "type": "Health", "amount": 120.0, "date_time": "24-05-2023 11:40:27", "transaction": "outgoing", "mode": "Online transaction"}, {"dest_type": "Inter Bank", "destination": "humamch3", "type": "Health", "amount": 120.0, "date_time": "24-05-2023 11:40:27", "transaction": "outgoing", "mode": "Online transaction"}, {"dest_type": "Inter Bank", "destination": "humamch3", "type": "Health", "amount": 120.0, "date_time": "24-05-2023 11:40:27", "transaction": "outgoing", "mode": "Online transaction"}, {"dest_type": "Inter Bank", "destination": "humamch3", "type": "Health", "amount": 120.0, "date_time": "24-05-2023 11:40:27", "transaction": "outgoing", "mode": "Online transaction"}, {"dest_type": "Inter Bank", "destination": "humamch3", "type": "Health", "amount": 120.0, "date_time": "24-05-2023 11:40:27", "transaction": "outgoing", "mode": "Online transaction"}, {"dest_type": "Inter Bank", "destination": "humamch3", "type": "Health", "amount": 120.0, "date_time": "24-05-2023 11:40:27", "transaction": "outgoing", "mode": "Online transaction"}, {"dest_type": "Inter Bank", "destination": "humamch3", "type": "Health", "amount": 120.0, "date_time": "24-05-2023 11:40:27", "transaction": "outgoing", "mode": "Online transaction"}, {"dest_type": "Inter Bank", "destination": "humamch3", "type": "Health", "amount": 120.0, "date_time": "24-05-2023 11:40:27", "transaction": "outgoing", "mode": "Online transaction"}, {"dest_type": "Inter Bank", "destination": "humamch3", "type": "Health", "amount": 120.0, "date_time": "24-05-2023 11:40:27", "transaction": "outgoing", "mode": "Online transaction"}, {"dest_type": "Inter Bank", "destination": "humamch3", "type": "Health", "amount": 120.0, "date_time": "24-05-2023 11:40:27", "transaction": "outgoing", "mode": "Online transaction"}], "qr": "iVBORw0KGgoAAAANSUhEUgAAAUoAAAFKAQAAAABTUiuoAAABXElEQVR4nO3aQW6EMAwFUEscgCNxdY7EAZDS8O04FqO2s8tffC9CA68ry8FGY+3bOE1UVFRUVJSDWsTWfDmufsWCOESpKDbtCtpvw2+tPBXloZ7JyKmL/E9RWmr7bf12bkWJqcf5+P8SK7qM4oIybHd/vse2PBWlobMhiZNzdCWfDYnoalri3LMqXw9ESSjqDontcafKl50oFY2m8c5a7Fuk2I9PUSaKDiSOSiTWyxCJ3UTpKL54eBti2fZj+2ofRdfTVwXG9vkrX3aiLHROZaP4rLz7Ru5FOWiMYddsSOK8HHkW5aJP0Y0kjjzP154oEfVmv8zQrQ7XHqIsdAY+ABePghSloiWJpe3PChTlon6ntPhmkdiPQ1N0PZ0D2TglfztfRXmolyGGtCeiKkWJKb4m+nyG5Y/Eiq6guFw5i70WUSqaB6Qdc5D2XwbYqwxFV9NvQlRUVFRUdD39AbEHgZYTDHl7AAAAAElFTkSuQmCC", "Cards": [{"card_number": "4173059226300795", "cvv": 123, "exp_date": "08/23", "card_name": "Muhammad Humam", "limits": {"daily": {"date": "13-03-2023", "total": 5000, "left": 5000, "spent": 0}, "monthly": {"month": "03-2023", "total": 100000, "left": 100000, "spent": 0}}}]}, "2": {"account_number": 1232142132, "username": "rafay", "password": "123456", "email": "rafay@gmail.com", "gender": "option1", "full_name": "Rafay Qureshi", "balance": 500.0, "savings": 60.0, "saving_percent": 15, "useable_bal": 50.0, "currency": "USD", "expense": [0, 0], "income": [0, 0, 450.0], "year": "2023", "month": "May", "date": "17", "day": "Wednessday", "months": ["April", "May"], "transaction_log": [{"dest_type": "Inter Bank", "destination": "humamch3", "type": "Family Support", "amount": 50.0, "date_time": "31-05-2023 12:53:33", "transaction": "incoming", "mode": "Online transaction"}, {"dest_type": "Inter Bank", "destination": "humamch3", "type": "Family Support", "amount": 400.0, "date_time": "31-05-2023 12:51:01", "transaction": "incoming", "mode": "Online transaction"}], "qr": "iVBORw0KGgoAAAANSUhEUgAAAUoAAAFKAQAAAABTUiuoAAABWklEQVR4nO3ZSRKDIBAFUKo8gEfy6h7JA1DVkZ5ATSXu+IvPAgeeqw7QTYq8bXshJSUlJSXFoMXbYneyr+3tEa83UiiqD3Isra/n2Hmn3TBKikNbEHVsX2sGVuO8kOLSNvmUWnRJ4WnckYJSveQ09M//rK+kk2hPSHJ3s2D/yl1I59DeSlm9uzdSFHqO1UxIrmuoPKYhKQLV9XLY5/TzNjWfgSWdSjdNGnWFXONL94/dkHQyFS2fbS72xxbT/R5Y0unU18vr2FCkkWJRqRHiI84VdaCnJqQw1MauJ1XD4SIpFN3E18voqu141j1+A6QANCtnzxyLvSPFor152h8Hib0+I4WhEU+tyvLY90hPCkX1oR8AZ9L4rYojnU4jF4nNLhdNiUYKSEv8ZxmVWnhSPDqUz5aV5FEIKQ7VS0xDWz4lMn5SMOotimb/fNzsSGHom0ZKSkpKSjqffgBFJZzkCB/vbQAAAABJRU5ErkJggg==", "Cards": [{"card_number": "4153378678101124", "cvv": 123, "exp_date": "08/23", "card_name": "Rafay Qureshi", "limits": {"daily": {"date": "13-03-2023", "total": 5000, "left": 5000, "spent": 0}, "monthly": {"month": "03-2023", "total": 100000, "left": 100000, "spent": 0}}}]}}}
+{
+  "User": {
+    "1": {
+      "account_number": 1232142132,
+      "username": "humamch3",
+      "password": "123456",
+      "email": "humamch4@gmail.com",
+      "gender": "M",
+      "full_name": "Muhammad Humam",
+      "balance": 147.0,
+      "savings": 0.0,
+      "saving_percent": 15,
+      "useable_bal": 147.0,
+      "currency": "USD",
+      "expense": [0, 498.0],
+      "income": [0, 645.0],
+      "year": "2023",
+      "month": "May",
+      "date": "17",
+      "day": "Wednessday",
+      "months": ["April", "May"],
+      "transaction_log": [
+        {
+          "dest_type": "Inter Bank",
+          "destination": "rafay",
+          "type": "Misc",
+          "amount": 10.0,
+          "date_time": "31-05-2023 15:35:21",
+          "transaction": "incoming",
+          "mode": "Online transaction"
+        },
+        {
+          "dest_type": "Inter Bank",
+          "destination": "rafay",
+          "type": "Misc",
+          "amount": 15.0,
+          "date_time": "31-05-2023 15:35:02",
+          "transaction": "incoming",
+          "mode": "Online transaction"
+        },
+        {
+          "dest_type": "Inter Bank",
+          "destination": "rafay",
+          "type": "Misc",
+          "amount": 100.0,
+          "date_time": "31-05-2023 15:33:17",
+          "transaction": "incoming",
+          "mode": "Online transaction"
+        },
+        {
+          "dest_type": "Inter Bank",
+          "destination": "rafay",
+          "type": "Misc",
+          "amount": 10.0,
+          "date_time": "31-05-2023 15:32:54",
+          "transaction": "incoming",
+          "mode": "Online transaction"
+        },
+        {
+          "dest_type": "Inter Bank",
+          "destination": "rafay",
+          "type": "Misc",
+          "amount": 5.0,
+          "date_time": "31-05-2023 15:31:52",
+          "transaction": "incoming",
+          "mode": "Online transaction"
+        },
+        {
+          "dest_type": "Inter Bank",
+          "destination": "rafay",
+          "type": "Misc",
+          "amount": 5.0,
+          "date_time": "31-05-2023 15:30:55",
+          "transaction": "incoming",
+          "mode": "Online transaction"
+        },
+        {
+          "dest_type": "Inter Bank",
+          "destination": "Shsh",
+          "type": "Xj",
+          "amount": 1.0,
+          "date_time": "31-05-2023 15:04:59",
+          "transaction": "outgoing",
+          "mode": "Online transaction"
+        },
+        {
+          "dest_type": "Inter Bank",
+          "destination": "rafay",
+          "type": "Misc",
+          "amount": 2.0,
+          "date_time": "31-05-2023 15:03:38",
+          "transaction": "outgoing",
+          "mode": "Online transaction"
+        },
+        {
+          "dest_type": "Inter Bank",
+          "destination": "rafay",
+          "type": "Misc",
+          "amount": 5.0,
+          "date_time": "31-05-2023 14:58:00",
+          "transaction": "outgoing",
+          "mode": "Online transaction"
+        },
+        {
+          "dest_type": "Inter Bank",
+          "destination": "rafay",
+          "type": "Misc",
+          "amount": 10.0,
+          "date_time": "31-05-2023 14:51:57",
+          "transaction": "outgoing",
+          "mode": "Online transaction"
+        },
+        {
+          "dest_type": "Inter Bank",
+          "destination": "rafay",
+          "type": "Misc",
+          "amount": 10.0,
+          "date_time": "31-05-2023 14:51:36",
+          "transaction": "outgoing",
+          "mode": "Online transaction"
+        },
+        {
+          "dest_type": "Inter Bank",
+          "destination": "rafay",
+          "type": "Misc",
+          "amount": 10.0,
+          "date_time": "31-05-2023 14:50:42",
+          "transaction": "outgoing",
+          "mode": "Online transaction"
+        },
+        {
+          "dest_type": "Local Bank",
+          "destination": "1234567",
+          "type": "Family Support",
+          "amount": 10.0,
+          "date_time": "31-05-2023 12:55:02",
+          "transaction": "outgoing",
+          "mode": "Online transaction"
+        },
+        {
+          "dest_type": "Inter Bank",
+          "destination": "rafay",
+          "type": "Family Support",
+          "amount": 50.0,
+          "date_time": "31-05-2023 12:53:33",
+          "transaction": "outgoing",
+          "mode": "Online transaction"
+        },
+        {
+          "dest_type": "Inter Bank",
+          "destination": "rafay",
+          "type": "Family Support",
+          "amount": 400.0,
+          "date_time": "31-05-2023 12:51:01",
+          "transaction": "outgoing",
+          "mode": "Online transaction"
+        }
+      ],
+      "qr": "iVBORw0KGgoAAAANSUhEUgAAAUoAAAFKAQAAAABTUiuoAAABXElEQVR4nO3aQW6EMAwFUEscgCNxdY7EAZDS8O04FqO2s8tffC9CA68ry8FGY+3bOE1UVFRUVJSDWsTWfDmufsWCOESpKDbtCtpvw2+tPBXloZ7JyKmL/E9RWmr7bf12bkWJqcf5+P8SK7qM4oIybHd/vse2PBWlobMhiZNzdCWfDYnoalri3LMqXw9ESSjqDontcafKl50oFY2m8c5a7Fuk2I9PUSaKDiSOSiTWyxCJ3UTpKL54eBti2fZj+2ofRdfTVwXG9vkrX3aiLHROZaP4rLz7Ru5FOWiMYddsSOK8HHkW5aJP0Y0kjjzP154oEfVmv8zQrQ7XHqIsdAY+ABePghSloiWJpe3PChTlon6ntPhmkdiPQ1N0PZ0D2TglfztfRXmolyGGtCeiKkWJKb4m+nyG5Y/Eiq6guFw5i70WUSqaB6Qdc5D2XwbYqwxFV9NvQlRUVFRUdD39AbEHgZYTDHl7AAAAAElFTkSuQmCC",
+      "Cards": [
+        {
+          "card_number": "4173059226300795",
+          "cvv": 123,
+          "exp_date": "08/23",
+          "card_name": "Muhammad Humam",
+          "limits": {
+            "daily": {
+              "date": "13-03-2023",
+              "total": 5000,
+              "left": 5000,
+              "spent": 0
+            },
+            "monthly": {
+              "month": "03-2023",
+              "total": 100000,
+              "left": 100000,
+              "spent": 0
+            }
+          }
+        }
+      ]
+    },
+    "2": {
+      "account_number": 1232142132,
+      "username": "rafay",
+      "password": "123456",
+      "email": "rafay@gmail.com",
+      "gender": "option1",
+      "full_name": "Rafay Qureshi",
+      "balance": 392.0,
+      "savings": 60.0,
+      "saving_percent": 15,
+      "useable_bal": -58.0,
+      "currency": "USD",
+      "expense": [0, 145.0],
+      "income": [0, 487.0],
+      "year": "2023",
+      "month": "May",
+      "date": "17",
+      "day": "Wednessday",
+      "months": ["April", "May"],
+      "transaction_log": [
+        {
+          "dest_type": "Inter Bank",
+          "destination": "humamch3",
+          "type": "Misc",
+          "amount": 10.0,
+          "date_time": "31-05-2023 15:35:21",
+          "transaction": "outgoing",
+          "mode": "Online transaction"
+        },
+        {
+          "dest_type": "Inter Bank",
+          "destination": "humamch3",
+          "type": "Misc",
+          "amount": 15.0,
+          "date_time": "31-05-2023 15:35:02",
+          "transaction": "outgoing",
+          "mode": "Online transaction"
+        },
+        {
+          "dest_type": "Inter Bank",
+          "destination": "humamch3",
+          "type": "Misc",
+          "amount": 100.0,
+          "date_time": "31-05-2023 15:33:17",
+          "transaction": "outgoing",
+          "mode": "Online transaction"
+        },
+        {
+          "dest_type": "Inter Bank",
+          "destination": "humamch3",
+          "type": "Misc",
+          "amount": 10.0,
+          "date_time": "31-05-2023 15:32:54",
+          "transaction": "outgoing",
+          "mode": "Online transaction"
+        },
+        {
+          "dest_type": "Inter Bank",
+          "destination": "humamch3",
+          "type": "Misc",
+          "amount": 5.0,
+          "date_time": "31-05-2023 15:31:52",
+          "transaction": "outgoing",
+          "mode": "Online transaction"
+        },
+        {
+          "dest_type": "Inter Bank",
+          "destination": "humamch3",
+          "type": "Misc",
+          "amount": 5.0,
+          "date_time": "31-05-2023 15:30:55",
+          "transaction": "outgoing",
+          "mode": "Online transaction"
+        },
+        {
+          "dest_type": "Inter Bank",
+          "destination": "humamch3",
+          "type": "Misc",
+          "amount": 2.0,
+          "date_time": "31-05-2023 15:03:38",
+          "transaction": "incoming",
+          "mode": "Online transaction"
+        },
+        {
+          "dest_type": "Inter Bank",
+          "destination": "humamch3",
+          "type": "Misc",
+          "amount": 5.0,
+          "date_time": "31-05-2023 14:58:00",
+          "transaction": "incoming",
+          "mode": "Online transaction"
+        },
+        {
+          "dest_type": "Inter Bank",
+          "destination": "humamch3",
+          "type": "Misc",
+          "amount": 10.0,
+          "date_time": "31-05-2023 14:51:57",
+          "transaction": "incoming",
+          "mode": "Online transaction"
+        },
+        {
+          "dest_type": "Inter Bank",
+          "destination": "humamch3",
+          "type": "Misc",
+          "amount": 10.0,
+          "date_time": "31-05-2023 14:51:36",
+          "transaction": "incoming",
+          "mode": "Online transaction"
+        },
+        {
+          "dest_type": "Inter Bank",
+          "destination": "humamch3",
+          "type": "Misc",
+          "amount": 10.0,
+          "date_time": "31-05-2023 14:50:42",
+          "transaction": "incoming",
+          "mode": "Online transaction"
+        },
+        {
+          "dest_type": "Inter Bank",
+          "destination": "humamch3",
+          "type": "Family Support",
+          "amount": 50.0,
+          "date_time": "31-05-2023 12:53:33",
+          "transaction": "incoming",
+          "mode": "Online transaction"
+        },
+        {
+          "dest_type": "Inter Bank",
+          "destination": "humamch3",
+          "type": "Family Support",
+          "amount": 400.0,
+          "date_time": "31-05-2023 12:51:01",
+          "transaction": "incoming",
+          "mode": "Online transaction"
+        }
+      ],
+      "qr": "iVBORw0KGgoAAAANSUhEUgAAAUoAAAFKAQAAAABTUiuoAAABWklEQVR4nO3ZSRKDIBAFUKo8gEfy6h7JA1DVkZ5ATSXu+IvPAgeeqw7QTYq8bXshJSUlJSXFoMXbYneyr+3tEa83UiiqD3Isra/n2Hmn3TBKikNbEHVsX2sGVuO8kOLSNvmUWnRJ4WnckYJSveQ09M//rK+kk2hPSHJ3s2D/yl1I59DeSlm9uzdSFHqO1UxIrmuoPKYhKQLV9XLY5/TzNjWfgSWdSjdNGnWFXONL94/dkHQyFS2fbS72xxbT/R5Y0unU18vr2FCkkWJRqRHiI84VdaCnJqQw1MauJ1XD4SIpFN3E18voqu141j1+A6QANCtnzxyLvSPFor152h8Hib0+I4WhEU+tyvLY90hPCkX1oR8AZ9L4rYojnU4jF4nNLhdNiUYKSEv8ZxmVWnhSPDqUz5aV5FEIKQ7VS0xDWz4lMn5SMOotimb/fNzsSGHom0ZKSkpKSjqffgBFJZzkCB/vbQAAAABJRU5ErkJggg==",
+      "Cards": [
+        {
+          "card_number": "4153378678101124",
+          "cvv": 123,
+          "exp_date": "08/23",
+          "card_name": "Rafay Qureshi",
+          "limits": {
+            "daily": {
+              "date": "13-03-2023",
+              "total": 5000,
+              "left": 5000,
+              "spent": 0
+            },
+            "monthly": {
+              "month": "03-2023",
+              "total": 100000,
+              "left": 100000,
+              "spent": 0
+            }
+          }
+        }
+      ]
+    }
+  }
+}

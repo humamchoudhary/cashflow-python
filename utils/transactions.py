@@ -53,10 +53,7 @@ def newTransaction(
                             user["expense"][-1] += amount
                         else:
                             user["expense"].append(amount)
-                        if amount > 100:
-                            user["savings"] -= user["saving_percent"] * amount / 100
-                        else:
-                            user["useable_bal"] -= amount
+                        user["useable_bal"] -= amount
                     else:
                         return {
                             "success": False,
@@ -92,7 +89,6 @@ def newTransaction(
                 else:
                     user["useable_bal"] += amount
                     user["balance"] += amount
-
 
             elif transaction == "outgoing":
                 if user["balance"] > amount:
