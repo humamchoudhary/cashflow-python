@@ -53,19 +53,24 @@ def open_savings():
     request_data = json.loads(request_data.decode("utf-8"))
     text = request_data["text"]
     username = request_data["username"]
-    amount = request_data["amount"]
+    amount = int(request_data["amount"])
     check = question(text, username)
+    print(check)
     if check:
-        userData = USERTABLE.search(QRY.username == username)
+        user_query = QRY.username == username
+        userData = USERTABLE.get(user_query)
+        # print(userData)
         if userData["savings"] > amount:
             userData["useable_bal"] += amount
             userData["savings"] -= amount
+            USERTABLE.update(userData, user_query)
             return jsonify({"success": True})
         else:
             avg = sum(userData["income"]) / len(userData["income"])
             if avg > amount:
                 userData["useable_bal"] += amount
                 userData["savings"] -= amount
+                USERTABLE.update(userData, user_query)
                 return jsonify({"success": True})
             return jsonify({"success": False, "message": "Insufficent Balance"})
 
