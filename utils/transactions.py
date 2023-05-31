@@ -91,7 +91,8 @@ def newTransaction(
                     user["savings"] += user["saving_percent"] * amount / 100
                 else:
                     user["useable_bal"] += amount
-                user["balance"] += amount
+                    user["balance"] += amount
+
 
             elif transaction == "outgoing":
                 if user["balance"] > amount:
