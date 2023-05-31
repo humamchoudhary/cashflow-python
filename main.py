@@ -6,12 +6,13 @@ from utils.signup import signup
 from flask_cors import CORS
 from utils.transactions import newTransaction
 from pprint import pprint
-from utils.questions import assess_financial_need
+from utils.questions import assess_financial_need, question
 import time
 
 app = Flask(__name__)
 CORS(app)
 DB = TinyDB("database.json")
+USERTABLE = DB.table("User")
 QRY = Query()
 
 
@@ -19,8 +20,6 @@ QRY = Query()
 def loginRoute():
     request_data = request.data
     request_data = json.loads(request_data.decode("utf-8"))
-    # print(request_data)
-    # request_data = request.args
     return make_response(
         jsonify(login(request_data["username"], request_data["password"]))
     )
@@ -48,11 +47,33 @@ def transactionsRoute():
     return search.pop()["transaction_log"]
 
 
+@app.route("/open_savings", methods=["POST"])
+def open_savings():
+    request_data = request.data
+    request_data = json.loads(request_data.decode("utf-8"))
+    text = request_data["text"]
+    username = request_data["username"]
+    amount = request_data["amount"]
+    check = question(text, username)
+    if check:
+        userData = USERTABLE.search(QRY.username == username)
+        if userData["savings"] > amount:
+            userData["useable_bal"] += amount
+            userData["savings"] -= amount
+            return jsonify({"success": True})
+        else:
+            avg = sum(userData["income"]) / len(userData["income"])
+            if avg > amount:
+                userData["useable_bal"] += amount
+                userData["savings"] -= amount
+                return jsonify({"success": True})
+            return jsonify({"success": False, "message": "Insufficent Balance"})
+
+
 @app.route("/make_transaction", methods=["POST"])
 def make_transaction():
     request_data = request.data
     request_data = json.loads(request_data.decode("utf-8"))
-    pprint(request_data)
 
     sender_log = newTransaction(
         request_data["username"],
@@ -73,7 +94,7 @@ def make_transaction():
             "incoming",
             request_data["mode"],
         )
-    print(sender_log)
+
     return make_response(jsonify(sender_log))
 
 

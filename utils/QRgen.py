@@ -17,24 +17,8 @@ def generate_qr_code(data):
 
     stream = BytesIO()
     qr_code_img.save(stream)
-    img = qr.make_image(fill_color="black", back_color="white")
-    qr_code_img.save("test.png")
-
     qr_code_bytes = stream.getvalue()
+    qr_code_base64 = base64.b64encode(qr_code_bytes).decode("utf-8")
 
-    return base64.b64encode(qr_code_bytes)
+    return qr_code_base64
 
-
-# # Example dictionary to store in the QR code
-# data_dict = {"destination": "humamch2", "dest_type": "Inter Bank"}
-
-# # Convert the dictionary to a string
-# data_string = str(data_dict)
-
-# # Generate the QR code image
-# qr_code_image = generate_qr_code(data_dict)
-# print(qr_code_image)
-
-# qr_code_base64 = base64.b64encode(qr_code_image.tobytes()).decode("utf-8")
-
-# # Create a JSON object to store the QR code

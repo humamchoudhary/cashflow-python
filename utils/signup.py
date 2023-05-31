@@ -17,8 +17,8 @@ def luhn_algorithm():
 
     for digit in even_digits:
         total += sum(divmod(digit * 2, 10))
-
-    return ((total * 9) % 10, card_number)
+    print(f"{card_number}{(total * 9) % 10}")
+    return f"{card_number}{(total * 9) % 10}"
 
 
 def signup(username, password, fname, email, gender):

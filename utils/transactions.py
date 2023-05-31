@@ -58,7 +58,11 @@ def newTransaction(
                         else:
                             user["useable_bal"] -= amount
                     else:
-                        return {"success": False, "message": "Insufficient balance!"}
+                        return {
+                            "success": False,
+                            "message": "Insufficient balance!",
+                            "saving_check": True,
+                        }
 
                 user["transaction_log"].insert(0, new_transaction)
                 user_table.update(user, user_query)
@@ -101,7 +105,11 @@ def newTransaction(
                     else:
                         user["useable_bal"] -= amount
                 else:
-                    return {"success": False, "message": "Insufficient balance!"}
+                    return {
+                        "success": False,
+                        "message": "Insufficient balance!",
+                        "saving_check": True,
+                    }
 
             user["transaction_log"].insert(0, new_transaction)
             user_table.update(user, user_query)
