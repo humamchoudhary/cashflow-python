@@ -16,6 +16,7 @@ def luhn_algorithm():
     total = sum(odd_digits)
 
     for digit in even_digits:
+        
         total += sum(divmod(digit * 2, 10))
     print(f"{card_number}{(total * 9) % 10}")
     return f"{card_number}{(total * 9) % 10}"
@@ -32,7 +33,6 @@ def signup(username, password, fname, email, gender):
     else:
         user_table.insert(
             {
-                "account_number": 1232142132,  # TODO Create a account number generator
                 "username": username,
                 "password": password,
                 "email": email,

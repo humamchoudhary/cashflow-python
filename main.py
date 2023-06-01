@@ -6,7 +6,7 @@ from utils.signup import signup
 from flask_cors import CORS
 from utils.transactions import newTransaction
 from pprint import pprint
-from utils.questions import assess_financial_need, question
+from utils.questions import  question
 import time
 
 app = Flask(__name__)
@@ -73,6 +73,12 @@ def open_savings():
                 USERTABLE.update(userData, user_query)
                 return jsonify({"success": True})
             return jsonify({"success": False, "message": "Insufficent Balance"})
+    return jsonify(
+        {
+            "success": False,
+            "message": "Thank you for your information. We will look into it!",
+        }
+    )
 
 
 @app.route("/make_transaction", methods=["POST"])
@@ -101,28 +107,6 @@ def make_transaction():
         )
 
     return make_response(jsonify(sender_log))
-
-
-@app.route("/unlock_saving")
-def unlock():
-    request_data = request.args
-    text = request_data["reason"]
-    amount = float(request_data["amount"])
-    request_data["username"]
-    if assess_financial_need(text):
-        return jsonify(
-            {
-                "success": True,
-                "message": "Savings unlocked.",
-            }
-        )
-    else:
-        return jsonify(
-            {
-                "success": False,
-                "message": "Thank you for your information. We will look into it!",
-            }
-        )
 
 
 if __name__ == "__main__":
