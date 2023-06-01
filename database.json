@@ -23,7 +23,7 @@
         {
           "dest_type": "Inter Bank",
           "destination": "rafay",
-          "type": "Misc",
+          "type": "Health",
           "amount": 10.0,
           "date_time": "31-05-2023 15:35:21",
           "transaction": "incoming",
@@ -32,7 +32,7 @@
         {
           "dest_type": "Inter Bank",
           "destination": "rafay",
-          "type": "Misc",
+          "type": "Health",
           "amount": 15.0,
           "date_time": "31-05-2023 15:35:02",
           "transaction": "incoming",
@@ -41,7 +41,7 @@
         {
           "dest_type": "Inter Bank",
           "destination": "rafay",
-          "type": "Misc",
+          "type": "Health",
           "amount": 100.0,
           "date_time": "31-05-2023 15:33:17",
           "transaction": "incoming",
