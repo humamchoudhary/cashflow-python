@@ -90,11 +90,14 @@ def assess_financial_need(keywords, username):
             last_transaction_count.append(count)
         for logs in last_transaction_count:
             for confidence in confidence_scale:
+                print(logs)
+                print(confidence)
                 if logs > 2 and confidence > 5:
                     return True
-
+        print(".")
         return False
     else:
+        print("x")
         return False
 
 

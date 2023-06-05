@@ -27,7 +27,7 @@ def newTransaction(
                 return {"success": False, "message": f"User '{destination}' not found."}
             else:
                 current_month = datetime.now().strftime("%B")  # Get the current month
-                last_month = user["months"][-1] if user["months"] else None         
+                last_month = user["months"][-1] if user["months"] else None
 
                 # Check if there was a dead month
                 if last_month != current_month:
@@ -43,11 +43,12 @@ def newTransaction(
                         user["income"].append(amount)
                     if amount > 100:
                         user["savings"] += user["saving_percent"] * amount / 100
+                        user["useable_bal"] += amount - user["savings"]
                     else:
                         user["useable_bal"] += amount
                     user["balance"] += amount
                 elif transaction == "outgoing":
-                    if user["balance"] > amount:
+                    if user["useable_bal"] > amount:
                         user["balance"] -= amount
                         if last_month == current_month:
                             user["expense"][-1] += amount
@@ -91,7 +92,7 @@ def newTransaction(
                     user["balance"] += amount
 
             elif transaction == "outgoing":
-                if user["balance"] > amount:
+                if user["useable_bal"] > amount:
                     user["balance"] -= amount
                     if last_month == current_month:
                         user["expense"][-1] += amount

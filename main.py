@@ -6,7 +6,7 @@ from utils.signup import signup
 from flask_cors import CORS
 from utils.transactions import newTransaction
 from pprint import pprint
-from utils.questions import  question
+from utils.questions import question
 import time
 
 app = Flask(__name__)
@@ -64,20 +64,23 @@ def open_savings():
             userData["useable_bal"] += amount
             userData["savings"] -= amount
             USERTABLE.update(userData, user_query)
-            return jsonify({"success": True})
+            return jsonify({"success": True}), 200
         else:
             avg = sum(userData["income"]) / len(userData["income"])
             if avg > amount:
                 userData["useable_bal"] += amount
                 userData["savings"] -= amount
                 USERTABLE.update(userData, user_query)
-                return jsonify({"success": True})
-            return jsonify({"success": False, "message": "Insufficent Balance"})
-    return jsonify(
-        {
-            "success": False,
-            "message": "Thank you for your information. We will look into it!",
-        }
+                return jsonify({"success": True}), 200
+            return jsonify({"success": False, "message": "Insufficent Balance"}), 403
+    return (
+        jsonify(
+            {
+                "success": False,
+                "message": "Thank you for your information. We will look into it!",
+            }
+        ),
+        403,
     )
 
 
