@@ -20,6 +20,7 @@ QRY = Query()
 def loginRoute():
     request_data = request.data
     request_data = json.loads(request_data.decode("utf-8"))
+    print(request_data)
     return make_response(
         jsonify(login(request_data["username"], request_data["password"]))
     )
